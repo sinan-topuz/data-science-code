@@ -14,3 +14,7 @@ def banner(message, border='-'):
     print(message)
     print(line)
 
+
+def printlist(liste):
+    for item in liste:
+        print(item)
