@@ -8,11 +8,13 @@ df = pd.DataFrame({'Names': names, 'Ages': ages})
 
 # print(df.describe())
 
-print(df['Names'])
+# print(df['Names'])
 
-df["Elderly"] = df["Ages"].apply(lambda x: True if x > 35 else False)
+df["IsElderly"] = df["Ages"].apply(lambda x: True if x > 35 else False)
 
-print(df)
+# print(df)
+
+print(df.head(n=3))
 
 
 
